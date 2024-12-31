@@ -1,0 +1,70 @@
+
+.root {
+    -fx-background-color: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    -fx-font-family: "Arial, sans-serif";
+}
+
+
+.label {
+    -fx-text-fill: #0d47a1;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+    -fx-text-alignment: center;
+}
+
+
+.button {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #1565c0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 4);
+}
+
+.button:disabled {
+    -fx-background-color: #90caf9;
+    -fx-text-fill: white;
+    -fx-cursor: not-allowed;
+}
+
+
+.text-area {
+    -fx-control-inner-background: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 10;
+    -fx-padding: 15;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+
+.vbox {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-padding: 40;
+}
+
+
+.progress-bar {
+    -fx-accent: #4caf50;
+}
+
+
+.card {
+    -fx-background-color: white;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+    -fx-max-width: 600;
+    -fx-alignment: center;
+}

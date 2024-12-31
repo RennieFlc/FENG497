@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.feng497ui.HelloController"
+            stylesheets="@styles.css">
+    <top>
+        <VBox alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+            <ImageView fitHeight="50" fitWidth="50" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@logo.png"/>
+                </image>
+            </ImageView>
+            <Label text="Building Safety Analyzer" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <Button fx:id="scanButton" text="Scan Blueprint" onAction="#handleScan" prefWidth="250">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@camera-icon.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="uploadButton" text="Upload Blueprint" onAction="#handleUpload" prefWidth="250">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@upload-icon.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="analyzeButton" text="Analyze" onAction="#handleAnalyze" prefWidth="250" disable="true">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@analyze-icon.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="resultsButton" text="Results" onAction="#goToResults" prefWidth="250" disable="true">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@results-icon.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="20"
+      stylesheets="@styles.css"
+      fx:controller="com.example.feng497ui.ResultsController">
+    <Label text="Analysis Results"
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-padding: 20;"/>
+    <VBox alignment="CENTER" spacing="10" styleClass="card">
+        <TextArea fx:id="resultArea" editable="false"
+                  prefHeight="300" prefWidth="400"
+                  promptText="Results will appear here..."/>
+    </VBox>
+    <Button text="Back to Home" onAction="#goToHome" prefWidth="200"/>
+</VBox>
